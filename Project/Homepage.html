@@ -11,7 +11,7 @@
     <style>
         body
         {
-            background-image: url(https://c.wallhere.com/photos/fe/8a/3008x2000_px_coffee_cup_freelance_laptop_minimalism_Mugs_Wooden_Surface-1335727.jpg);
+            background-image: url(https://c.wallhere.com/photos/fe/8a/3008x2000_px_coffee_cup_freelance_laptop_minimalism_Mugs_Wooden_Surface-1335727.jpg!d);
             background-repeat: no-repeat;
             background-size:auto;
         }
@@ -29,7 +29,6 @@
             overflow: hidden;
         }
 
-        /* Style the links inside the navigation bar */
         .topnav a {
             color: black;
             text-align: center;
@@ -38,38 +37,29 @@
             font-size: 17px;
             float: right;
         }
-
-        /* Change the color of links on hover */
         .topnav a:hover {
-            background-color: black;
-            /*color: transparent;*/
+            background-color: darkgrey;
         }
-
-        /* Add a color to the active/current link */
-        .topnav a.active {
-            color: black;
-        }
-
     </style>
 
 </head>
 <body>
 <form>
     <div class="topnav">
-        <a href="#"><i class="fas fa-book-reader"></i> About Us</a>
-        <a href="#"><i class="fas fa-phone"></i> Contact Us</a>
-        <a href="#"><i class="fas fa-user-plus"></i> Signup</a>
-        <a href="Login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="#"><i class="fas fa-book-reader"></i><span class="d-sm-none d-md-inline d-none"> About Us </span></a>
+        <a href="#"><i class="fas fa-phone"></i><span class="d-sm-none d-md-inline d-none"> Contact Us</span></a>
+        <a href="#"><i class="fas fa-user-plus"></i><span class="d-sm-none d-md-inline d-none"> Signup</span></a>
+        <a href="Login.html"><i class="fa fa-fw fa-user"></i><span class="d-sm-none d-md-inline d-none"> Login</span></a>
     </div>
 </form>
 <div class="container">
     <div class="row">
-        <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center">
-            <div class="content">
+        <div class="text-center">
+            <div class="content col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
                 <div id="mainLogo" class="logo">
                     <img src="images/Homepage.png" class="img-responsive" alt="logo">
                 </div>
-                <h1 class="main-shout">A Home for FreeLancing</h1>
+                <h1 class="main-shout" style="margin-left: -22%; ">A Home for FreeLancing</h1>
             </div>
         </div>
     </div>

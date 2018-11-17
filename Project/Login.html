@@ -14,7 +14,7 @@
 			box-sizing: border-box;
 			display: block;
 			border-radius: 10px;
-			background:black;
+			background:whitesmoke;
 			opacity: 0.5;
 			filter: alpha(opacity=50);
 			-webkit-box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
@@ -26,9 +26,9 @@
 			border-left: none;
 			border-right: none;
 			background-color: transparent;
-			border-bottom-color: white;
-			font-color: white;
-			color: white;
+			border-bottom-color: black;
+			font-color: black;
+			color: black;
 			width: 100%;
 			padding-left: 10%;
 		}
@@ -39,7 +39,7 @@
 		#btn-Login {
 			border: none;
 			background-color: transparent;
-			color: white;
+			color: black;
 			margin-top: 10%;
 			margin-bottom: 5%;
 			display: block;
@@ -52,7 +52,7 @@
 		#btn-Signup {
 			border: none;
 			background-color: transparent;
-			color: white;
+			color: black;
 			margin-bottom: 5%;
 			display: block;
 			margin-left: auto;
@@ -60,26 +60,27 @@
 			font-size: large;
 			cursor: pointer;
 		}
-		.fa-user-circle {
+		.fa-user-circle
+		{
 			position: absolute;
 		}
 		.fa-lock
 		{
 			position: absolute;
 		}
-		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-			color: white;
-			opacity: 1; /* Firefox */
-		}
-		body
+		::placeholder
 		{
-			background-image: url(https://secthemall.com/assets/img/img42.jpg);
+			color: black;
+			opacity: 1;
+		}
+		.bgLoginProperty
+		{
+			background-image: url(https://png2.kisspng.com/20180326/liw/kisspng-gradient-desktop-wallpaper-color-background-5ab88c172773b8.5174360515220439271616.png);
 			background-repeat: no-repeat;
 			background-size:auto;
 		}
-
 		.topnav {
-			background:black;
+			background:white;
 			opacity: 0.5;
 			filter: alpha(opacity=50);
 			-webkit-box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
@@ -88,8 +89,7 @@
 			overflow: hidden;
 		}
 		.topnav a {
-			float: left;
-			color: #f2f2f2;
+			color: black;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
@@ -97,53 +97,45 @@
 			float: right;
 		}
 		.topnav a:hover {
-			background-color: #ddd;
+			background-color: darkgrey;
 			/*color: transparent;*/
 		}
 		.topnav a.active {
-			color: white;
-		}
-		.HeadIcons
-		{
-			border-radius: 50px;
-			border: none;
-			background-color: Black;
-			color: white;
-			font-size: x-large;
-			padding: 4%;
+			color: black;
 		}
 	</style>
 
 </head>
-<body>
-<form>
-<div class="topnav">
-	<a href="L"><i class="fas fa-book-reader"></i> About Us</a>
-	<a href="#"><i class="fas fa-phone"></i> Contact Us</a>
-	<a href="Homepage.html"><i class="fas fa-home"></i> Home</a>
-</div>
-</form>
+<body class="bgLoginProperty">
+	<form>
+		<div class="topnav">
+			<a href="#" class="navbar-left" style="float: left;"><img src="Images/lg1.png"></a>
+			<a href="L"><i class="fas fa-book-reader"></i><span class="d-sm-none d-md-inline d-none"> About Us</span></a>
+			<a href="#"><i class="fas fa-phone"></i><span class="d-sm-none d-md-inline d-none"> Contact Us</span></a>
+			<a href="Homepage.html"><i class="fas fa-home"></i><span class="d-sm-none d-md-inline d-none"> Home</span></a>
+		</div>
+	</form>
 </div>
 
 	<div class="container col-xl-4 col-lg-6 col-md-8 col-sm-10">
 		<form id="FormBody">
 			<div>
-				<<div class="text-center">
-					<h2>LOGIN</h2>
+				<div class="text-center">
+					<img src="Images/lg2.png" alt="LOGO"/>
 				</div>
 
 				<div class="row my-5">
 					<div class="col-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
-						<p style="color: white" class="d-none d-sm-block">Login :</p>
-						<i style="color: white;" class="fas fa-user-circle mt-1"></i>
+						<p style="color: black" class="d-none d-sm-block">Login :</p>
+						<i style="color: black;" class="fas fa-user-circle mt-1"></i>
 						<input type="text" class="InpuTTags" id="Tg-Username" name="User" placeholder="Username" >
 					</div>
 				</div>
 
 				<div class="row my-3">
 					<div class="col-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
-						<p style="color: white"class="d-none d-sm-block">Password :</p>
-						<i style="color: white;" class="fas fa-lock mt-1"></i>
+						<p style="color: black"class="d-none d-sm-block">Password :</p>
+						<i style="color: black;" class="fas fa-lock mt-1"></i>
 						<input type="password" class="InpuTTags" id="Tg-Password" name="Pwd" placeholder="Password" >
 					</div>
 				</div>
@@ -162,7 +154,7 @@
 
 				<div class="row my-3">
 					<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-1 offset-md-1">
-					<a href="https://www.google.com" style="color: white">Forget Password?</a>
+					<a href="https://www.google.com" style="color: black">Forget Password?</a>
 					</div>
 				</div>
 
