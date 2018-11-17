@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Login - RackUp</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Old+Standard+TT">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<style>
+		#FormBody{
+			box-sizing: border-box;
+			display: block;
+			border-radius: 10px;
+			background:black;
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+			-webkit-box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
+			box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
+		}
+		.InpuTTags{
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			background-color: transparent;
+			border-bottom-color: white;
+			font-color: white;
+			color: white;
+			width: 100%;
+			padding-left: 10%;
+		}
+		.container
+		{
+			margin-top: 7%;
+		}
+		#btn-Login {
+			border: none;
+			background-color: transparent;
+			color: white;
+			margin-top: 10%;
+			margin-bottom: 5%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: xx-large;
+			cursor: pointer;
+		}
+		
+		#btn-Signup {
+			border: none;
+			background-color: transparent;
+			color: white;
+			margin-bottom: 5%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: large;
+			cursor: pointer;
+		}
+		.fa-user-circle {
+			position: absolute;
+		}
+		.fa-lock
+		{
+			position: absolute;
+		}
+		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			color: white;
+			opacity: 1; /* Firefox */
+		}
+		body
+		{
+			background-image: url(https://secthemall.com/assets/img/img42.jpg);
+			background-repeat: no-repeat;
+			background-size:auto;
+		}
+
+		.topnav {
+			background:black;
+			opacity: 0.5;
+			filter: alpha(opacity=50);
+			-webkit-box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
+			box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
+			overflow: hidden;
+		}
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			float: right;
+		}
+		.topnav a:hover {
+			background-color: #ddd;
+			/*color: transparent;*/
+		}
+		.topnav a.active {
+			color: white;
+		}
+		.HeadIcons
+		{
+			border-radius: 50px;
+			border: none;
+			background-color: Black;
+			color: white;
+			font-size: x-large;
+			padding: 4%;
+		}
+	</style>
+
+</head>
+<body>
+<form>
+<div class="topnav">
+	<a href="L"><i class="fas fa-book-reader"></i> About Us</a>
+	<a href="#"><i class="fas fa-phone"></i> Contact Us</a>
+	<a href="Homepage.html"><i class="fas fa-home"></i> Home</a>
+</div>
+</form>
+</div>
+
+	<div class="container col-xl-4 col-lg-6 col-md-8 col-sm-10">
+		<form id="FormBody">
+			<div>
+				<<div class="text-center">
+					<h2>LOGIN</h2>
+				</div>
+
+				<div class="row my-5">
+					<div class="col-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+						<p style="color: white" class="d-none d-sm-block">Login :</p>
+						<i style="color: white;" class="fas fa-user-circle mt-1"></i>
+						<input type="text" class="InpuTTags" id="Tg-Username" name="User" placeholder="Username" >
+					</div>
+				</div>
+
+				<div class="row my-3">
+					<div class="col-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+						<p style="color: white"class="d-none d-sm-block">Password :</p>
+						<i style="color: white;" class="fas fa-lock mt-1"></i>
+						<input type="password" class="InpuTTags" id="Tg-Password" name="Pwd" placeholder="Password" >
+					</div>
+				</div>
+
+				<div class="row my-3">
+					<div class="col-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+					<button id="btn-Login" type="submit"> Login </button>
+					</div>
+				</div>
+				
+				<div class="row my-3">
+					<div class="col-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+					<button id="btn-Signup" type="submit"> Sign Up </button>
+					</div>
+				</div>
+
+				<div class="row my-3">
+					<div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-1 offset-md-1">
+					<a href="https://www.google.com" style="color: white">Forget Password?</a>
+					</div>
+				</div>
+
+			</div>
+		</form>
+	</div>
+</body>
+</html>
