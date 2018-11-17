@@ -9,10 +9,10 @@
     <title>Welcome to RackUp</title>
 
     <style>
-        body
+        #bgHomepageProperty
         {
             background-image: url(https://c.wallhere.com/photos/fe/8a/3008x2000_px_coffee_cup_freelance_laptop_minimalism_Mugs_Wooden_Surface-1335727.jpg!d);
-            background-repeat: no-repeat;
+            background-repeat:no-repeat;
             background-size:auto;
         }
         #mainLogo
@@ -28,7 +28,6 @@
             box-shadow: 10px 10px 31px 1px rgba(0,0,0,0.75);
             overflow: hidden;
         }
-
         .topnav a {
             color: black;
             text-align: center;
@@ -39,27 +38,33 @@
         }
         .topnav a:hover {
             background-color: darkgrey;
+            /*color: transparent;*/
+        }
+        .topnav a.active {
+            color: black;
         }
     </style>
 
 </head>
-<body>
+<body id="bgHomepageProperty">
 <form>
     <div class="topnav">
+        <a href="#" class="navbar-left" style="float: left;"><img src="Images/lg1.png"></a>
         <a href="#"><i class="fas fa-book-reader"></i><span class="d-sm-none d-md-inline d-none"> About Us </span></a>
         <a href="#"><i class="fas fa-phone"></i><span class="d-sm-none d-md-inline d-none"> Contact Us</span></a>
         <a href="#"><i class="fas fa-user-plus"></i><span class="d-sm-none d-md-inline d-none"> Signup</span></a>
         <a href="Login.html"><i class="fa fa-fw fa-user"></i><span class="d-sm-none d-md-inline d-none"> Login</span></a>
     </div>
 </form>
-<div class="container">
+
+<div class="container col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
     <div class="row">
         <div class="text-center">
-            <div class="content col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                <div id="mainLogo" class="logo">
+            <div class="content">
+                <div id="mainLogo" class="logo col-10 offset-2 offset-xl-2 offset-lg-2 offset-md-2 offset-sm-2">
                     <img src="images/Homepage.png" class="img-responsive" alt="logo">
                 </div>
-                <h1 class="main-shout" style="margin-left: -22%; ">A Home for FreeLancing</h1>
+                <h1 class="main-shout" style="margin-left: -10%; ">A Home for FreeLancing</h1>
             </div>
         </div>
     </div>
